@@ -1,1 +1,21 @@
+## @file BombermanPkg.dec
+# Bomberman Game Package for UEFI Shell
+#
 
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = BombermanPkg
+  PACKAGE_GUID                   = A1B2C3D4-E5F6-7890-ABCD-EF1234567890
+  PACKAGE_VERSION                = 1.0
+
+[Includes]
+  .
+
+[LibraryClasses]
+
+[Guids]
+  gBombermanPkgGuid = { 0xA1B2C3D4, 0xE5F6, 0x7890, { 0xAB, 0xCD, 0xEF, 0x12, 0x34, 0x56, 0x78, 0x90 } }
+
+[Protocols]
+  gEfiGraphicsOutputProtocolGuid = { 0x9042A9DE, 0x23DC, 0x4A38, { 0x96, 0xFB, 0x7A, 0xDE, 0xD0, 0x80, 0x51, 0x6A } }
+  gEfiSimpleTextInProtocolGuid   = { 0x387477C1, 0x69C7, 0x11D2, { 0x8E, 0x39, 0x00, 0xA0, 0xC9, 0x69, 0x72, 0x3B } }
