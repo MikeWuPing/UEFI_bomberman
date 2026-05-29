@@ -1,0 +1,60 @@
+## @file Bomberman.inf
+# Bomberman UEFI Shell Application
+#
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Bomberman
+  FILE_GUID                      = C3D4E5F6-A7B8-9012-CDEF-123456789012
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  Main.c
+  Game.h
+  Game.c
+  Map.h
+  Map.c
+  Player.h
+  Player.c
+  Bomb.h
+  Bomb.c
+  Enemy.h
+  Enemy.c
+  Gfx.h
+  Gfx.c
+  Input.h
+  Input.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  BombermanPkg/BombermanPkg.dec
+
+[LibraryClasses]
+  UefiLib
+  UefiBootServicesTableLib
+  BaseMemoryLib
+  BaseLib
+  PrintLib
+  DebugLib
+  MemoryAllocationLib
+  UefiApplicationEntryPoint
+
+[Protocols]
+  gEfiGraphicsOutputProtocolGuid
+  gEfiSimpleTextInProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid
+  gEfiLoadedImageProtocolGuid
+
+[Guids]
+  gEfiFileInfoGuid
+
+[Pcd]
+
+[Depex]
+  TRUE
+
+[BuildOptions]
+  MSFT:*_*_*_CC_FLAGS = /Od /Oi- /wd4459 /wd4819
+  GCC:*_*_*_DLINK_FLAGS = -Wl,--image-base=0x400000
