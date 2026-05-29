@@ -2,7 +2,7 @@
 
 **[English](README_en.md)** | 中文
 
-经典炸弹人游戏的 UEFI Shell 移植版本。不需要操作系统，不需要图形库，一个 `.efi` 文件扔进 BIOS 直接玩。
+经典炸弹人游戏的 UEFI Shell 移植版本。不需要操作系统，不需要图形库，一个 `.efi` 文件扔进 BIOS 直接玩。原Repo：https://github.com/MaximLevchenko/CPP-2D-Game-Bomberman，由Xiaomi Mimo V2.5 Pro移植，因为已经改得面目全非，原Repo已经没有参考作用。
 
 > API 成本：3.3 元（Xiaomi Mimo V2.5 Pro via Claude Code）
 
