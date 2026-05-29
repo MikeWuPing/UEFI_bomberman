@@ -10,7 +10,7 @@
 
 <!-- TODO: 替换为实际截图和动图 -->
 
-![游戏动图](<img width="1272" height="886" alt="full1" src="https://github.com/user-attachments/assets/20ac9a75-9fe3-4b84-ac2b-ba1e9b70bb0b" />)
+<img width="1272" height="886" alt="full1" src="https://github.com/user-attachments/assets/20ac9a75-9fe3-4b84-ac2b-ba1e9b70bb0b" />
 
 <img width="956" height="886" alt="Snipaste_2026-05-28_22-14-07" src="https://github.com/user-attachments/assets/01c35970-c3a5-4995-b57f-99997cd5c770" />
 
